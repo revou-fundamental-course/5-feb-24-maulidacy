@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+
+        <title>Konverter Suhu</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+      <header id="navigation-bar">
+        <div class="container">
+            <h1>Konversi Suhu</h1>
+        </div>
+    </header>
+        <div class="input-section">
+            <label for="input-field">Celcius (°C):</label>
+            <input type="number" class="input-field" id="celsius">
+            <nav class="navigation">
+                <a href="">Lihat Hasil</a>
+                <a href="">Lihat Rumus</a>
+            </nav>
+        </div>
+            <button class="my-button" onclick="convertToCelsius()">Konversi</button>
+            <button class="my-button" onclick="reset()">Reset</button>
+            <button class="my-button" onclick="reverse()">Reverse</button>
+    
+            <div class="input-section">
+                <label for="input-field">Fahrenheit (°F):</label>
+                    <p id="outputFahrenheit"></p>
+                    <label for="input-field">Cara Kalkulasi:</label>
+                    <p id="calculation"></p>
+                </div>
+            
+                <script src="script.js"></script>
+
+    </body>
+</html>
