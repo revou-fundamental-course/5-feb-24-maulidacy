@@ -1,39 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+<html lang="en">
 
-        <title>Konverter Suhu</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Suhu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-      <header id="navigation-bar">
+<body>
+
+    <header id="navigation-bar">
         <div class="container">
-            <h1>Konversi Suhu</h1>
+            <a href="#" class="logo"><span>Konversi</span> Suhu</a>
         </div>
     </header>
-        <div class="input-section">
-            <label for="input-field">Celcius (°C):</label>
-            <input type="number" class="input-field" id="celsius">
-            <nav class="navigation">
-                <a href="">Lihat Hasil</a>
-                <a href="">Lihat Rumus</a>
-            </nav>
-        </div>
-            <button class="my-button" onclick="convertToCelsius()">Konversi</button>
-            <button class="my-button" onclick="reset()">Reset</button>
-            <button class="my-button" onclick="reverse()">Reverse</button>
-    
-            <div class="input-section">
-                <label for="input-field">Fahrenheit (°F):</label>
-                    <p id="outputFahrenheit"></p>
-                    <label for="input-field">Cara Kalkulasi:</label>
-                    <p id="calculation"></p>
-                </div>
-            
-                <script src="script.js"></script>
+    <div class="note">
+        <p>Masukkan suhu ke kotak dibawah, lalu klik tombol <span>KONVERSI</span> untuk mendapatkan hasilnya.</p>
+        <p>Klik tombol <span>REVERSE</span> untuk mengubah kotak menjadi Fahrenheit atau Celcius</p>
+    </div>
+    <div class="input-section">
+        <label for="input-field">Masukkan Suhu (°C/°F):</label>
+        <input type="number" class="input-field" id="celsius">
+        <nav class="navigation">
+            <a href="https://rumusrumus.com/rumus-c-r-f-k/">Lihat Rumus</a>
+        </nav>
+    </div>
+    <div class="button">
+        <button class="my-buttonn" onclick="convertToCelsius()">Konversi</button>
+        <button class="my-buttonn" onclick="reset()">Reset</button>
+        <button class="my-buttonn" onclick="reverse()">Reverse</button>
+    </div>
 
-    </body>
+    <div class="output-section">
+        <p id="result">Hasil Konversi:</p>
+        <div class="input-field">
+            <label for="input-field">Fahrenheit (°F):</label>
+            <p id="outputFahrenheit"></p>
+        </div>
+        <div class="input-field">
+            <label for="input-field">Celcius (°C):</label>
+            <p id="outputCelcius"></p>
+        </div>
+        <div class="input-field">
+            <label for="input-field">Cara Kalkulasi:</label>
+            <p id="calculation"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
