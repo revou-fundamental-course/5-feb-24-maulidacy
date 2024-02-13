@@ -107,7 +107,7 @@ body {
 
 .input-field {
     justify-content: space-between;
-    background-color: #1f242d;
+    background-color: var(--bg-color);
     text-align: center;
     margin: 8px 3px;
     border-radius: 8px;
@@ -119,12 +119,12 @@ body {
 }
 
 .input-field:focus {
-    border: solid #7b68ee;
+    border: solid var(--bg-color);
 }
 
 .button {
     justify-content: center;
-    background-color: #1f242d;
+    background-color: var(--bg-color);
     text-align: center;
     margin: 8px 0px;
     border-radius: 8px;
@@ -134,7 +134,7 @@ body {
 
 .my-buttonn {
     justify-content: space-between;
-    background-color: #7b68ee;
+    background-color: var(--main-color);
     text-align: center;
     margin: 8px 4px;
     border-radius: 8px;
