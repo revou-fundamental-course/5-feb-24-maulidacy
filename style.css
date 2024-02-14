@@ -159,6 +159,50 @@
     border: solid var(--bg-color);
   }
   
+  .rumus-section {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    margin: 8px 3px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    justify-content: center;
+    color: var(--main-color);
+  }
+  
+  .rumus-konversi {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    margin: 8px 3px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    justify-content: center;
+    color: var(--main-color);
+  }
+  
+  .rumus {
+    background-color: var(--bg-color);
+    margin: 8px 4px;
+    padding: 16px 16px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    border-radius: 6px;
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    font-size: 17px;
+    width: 70%;
+  }
+  
+  .rumus span {
+    color: var(--main-color);
+    line-height: 3;
+  }
+  
   @media (max-width: 600px) {
     body {
       padding: 10px;
